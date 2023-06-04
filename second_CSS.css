@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(second_background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 220px;
+    cursor: pointer;
+    margin-left: 10px; 
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00f5ff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #00f5ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.6s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.row1{
+    margin-top: 45px;
+}
+
+
+.inputsum {
+    width: 280px;
+    height: 20px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    margin-left: 250px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-radius: 100px;
+    border-color: #ffffff;
+    border-width: 2.5px;
+}
+.inputsum:hover {
+    border-color: #09f7ff;
+    transition: 0.5s;
+}
+.labelsum{
+    text-align: center;
+    margin-left: 340px;
+}
+#c{
+    color: greenyellow;
+}
+#g{
+    color: greenyellow;
+}
+.table{
+    text-align: center;
+    margin-left: 340px;
+    color: white;
+}
+.v{
+    color: white;
+}
+.buttonsum {
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border: 3px solid;
+    padding: 8px 10px;
+    position: relative;
+    margin: -5px 0;
+    margin-left: 220px;
+    width: 150px;
+    height: 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.buttonsum:before {
+    transition: 0.5s all ease-in-out;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+
+.buttonsum:hover {
+    transition: 0.6s all ease-in-out;
+    background-color: #00f5ff;
+    color: rgb(255, 255, 255);
+}
+
+.buttonsum:hover:before {
+    transition: 0.5s all ease-in-out;
+    top: 0;
+    height: 100%;
+} 
+.reset {
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border: 3px solid;
+    padding: 8px 10px;
+    position: relative;
+    margin: -5px 0;
+    margin-top: -36px;
+    margin-left: 400px;
+    width: 150px;
+    height: 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.reset:before {
+    transition: 0.5s all ease-in-out;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+
+.reset:hover {
+    transition: 0.6s all ease-in-out;
+    background-color: #00f5ff;
+    color: rgb(255, 255, 255);
+}
+
+.reset:hover:before {
+    transition: 0.5s all ease-in-out;
+    top: 0;
+    height: 100%;
+} 
+/*style for subtracting*/
+
+.row2{
+    margin-top: 45px;
+}
+.inputsub{
+    width: 280px;
+    height: 20px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    margin-left: 250px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-radius: 100px;
+    border-color: #ffffff;
+    border-width: 2.5px;
+}
+.inputsub:hover {
+    border-color: #09f7ff;
+    transition: 0.5s;
+}
+.labelsub{
+    text-align:center;
+    margin-left:340px;
+}
+#c{
+    color: greenyellow;
+}
+.table{
+    text-align: center;
+    margin-left: 340px;
+    color: white;
+}
+.buttonsub {
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border: 3px solid;
+    padding: 8px 10px;
+    position: relative;
+    margin: -5px 0;
+    margin-left: 220px;
+    width: 150px;
+    height: 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.buttonsub:before {
+    transition: 0.5s all ease-in-out;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+
+.buttonsub:hover {
+    transition: 0.6s all ease-in-out;
+    background-color: #00f5ff;
+    color: rgb(255, 255, 255);
+}
+
+.buttonsub:hover:before {
+    transition: 0.5s all ease-in-out;
+    top: 0;
+    height: 100%;
+} 
+/*code for miltiplication*/
+.row3{
+    margin-top: 65px;
+}
+.inputmulti {
+    width: 280px;
+    height: 20px;
+    padding: 8px 10px;
+    margin: 5px 0;
+    margin-left: 250px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-radius: 100px;
+    border-color: #ffffff;
+    border-width: 2.5px;
+}
+.inputmulti:hover {
+    border-color: #09f7ff;
+    transition: 0.5s;
+}
+.labelmulti{
+    text-align: center;
+    margin-left: 340px;
+}
+#j{
+    color: greenyellow;
+}
+.table{
+    text-align: center;
+    margin-left: 340px;
+    color: white;
+}
+.v{
+    color: white;
+}
+.buttonmulti {
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border: 3px solid;
+    padding: 8px 10px;
+    position: relative;
+    margin: -5px 0;
+    margin-left: 220px;
+    width: 150px;
+    height: 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.buttonmulti:before {
+    transition: 0.5s all ease-in-out;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+
+.buttonmulti:hover {
+    transition: 0.6s all ease-in-out;
+    background-color: #00f5ff;
+    color: rgb(255, 255, 255);
+}
+
+.buttonmulti:hover:before {
+    transition: 0.5s all ease-in-out;
+    top: 0;
+    height: 100%;
+} 
+.reset {
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    border: 3px solid;
+    padding: 8px 10px;
+    position: relative;
+    margin: -5px 0;
+    margin-top: -36px;
+    margin-left: 400px;
+    width: 150px;
+    height: 20px;
+    box-sizing: content-box;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.reset:before {
+    transition: 0.5s all ease-in-out;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+
+.reset:hover {
+    transition: 0.6s all ease-in-out;
+    background-color: #00f5ff;
+    color: rgb(255, 255, 255);
+}
+
+.reset:hover:before {
+    transition: 0.5s all ease-in-out;
+    top: 0;
+    height: 100%;
+} 
